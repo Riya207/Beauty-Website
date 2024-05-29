@@ -21,7 +21,44 @@
                     font-family: "Roboto", sans-serif;
                     color: #4b8fe9;
              }
-             .nav{
+                    
+             .container{
+                        max-width: 95%;
+                       margin: 0 auto;
+             }
+             .row{
+                              display: flex;
+              }
+              .flex{
+                        flex-wrap: wrap;
+              }
+              .flex>*{
+                        flex: 1 1 25em;
+              }
+               .column{
+                       display:grid;
+               }
+               h4{
+                         font-size: 19px;
+               }
+                h6{
+                          font-size: 16px;
+                }
+                h1{
+                          font-size: 41px;
+                          line-height: 41px:
+                }
+                h2{
+                          font-size: 35px;
+                          line-height: 35px;
+                }
+                p{
+                          font-size: 16px;
+                          line-height: 20px;
+                          padding: 20px 0 30px;
+                }
+                              
+                .nav{
                     position: sticky;
                     top: 0; 
                     right: 0;
@@ -66,6 +103,35 @@
                     font-size: 22px;
                     margin: 0 10px;
              }
+             .home{
+                    background: rgba(192, 230, 255, 0.8);
+                    background-repeat: no-repeat;
+                       background-size: cover;
+                       background-position: centre;
+             }
+             .home-img{
+                       justify-content: centre;
+             }
+             .home-img img{
+                       max-height: 500px;
+                       object-fit: contain;
+             }
+             .swiper-pagination{
+                       max-width: max-content;
+             }
+             .home-content{
+                       align-self: centre;
+             }
+             .home-content div{
+                       max-width:550px;
+             }
+             .main-btn{
+                       padding: 10px 20px;
+                       border: 1px solid rgba(175, 1, 255, 0.483);
+                       border-radius: 5px;
+                       text-transform: uppercase;
+                       font-size: 17px;
+             }
              
           </style>
 </head>
@@ -90,12 +156,12 @@
           </section>
 
           <!-- HOME SECTION STARTS -->
-          <section class="home"></section>
+          <section class="home">
           <!-- Swipper -->
           <div class="swiper mySwiper home-swiper row container">
           <div class="swiper-wrapper">
-                    <div class="swiper-slide row flex"
-          <div class="home-content">
+            <div class="swiper-slide row flex"
+                  <div class="home-content">
                      <div>
                         <h1>The ultimate cosmetic store</h1>
                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab sapiente cumque consequuntur asperiores, eum minus beatae esse distinctio atque ipsum harum cum odio, earum rerum nobis reiciendis hic unde./p>
@@ -105,9 +171,24 @@
           </div>
            </div>
                     <div class="home-img row">
-                              
+                         <img src="./img/Serum.png" alt="">    
                     </div>
           </div>
-          <div class="swiper-button-pagination"></div>
+         <div class="swiper-slide row flex"
+                  <div class="home-content">
+                     <div>
+                        <h1>The ultimate cosmetic store</h1>
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ab sapiente cumque consequuntur asperiores, eum minus beatae esse distinctio atque ipsum harum cum odio, earum rerum nobis reiciendis hic unde./p>
+                         </p> 
+                          <a href="" class="main-btn active">Shop Now</a>     
+                              
+          </div>
+           </div>
+                    <div class="home-img row">
+                         <img src="./img/Serum.png" alt="">    
+                    </div>
+          </div>
+          <div class="swiper-pagination"></div>
+         </section>
 </body>
 </html>
